@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #042940;
+}
+
+header{
+    background-image: linear-gradient(180deg,#042940,#005C53);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+header p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+nav{
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: #042940;
+}
+
+nav a:active{
+    background-color: rgb(1, 138, 92);
+}
+main{
+    background-color: #FCF5EB;
+    width: 80%;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main h1{
+    font-family: 'android', sans-serif;
+    color: #005C53;
+}
+
+main h2{
+    background-image: linear-gradient(to right,#005C53 50%, #dcfffc);
+    color: whitesmoke;
+    font-family: 'android',sans-serif;
+    padding-left: 20px;
+}
+
+p{
+    text-align: justify;
+    font-family: arial;
+    font-size: 1.2em;
+}
+#dan-droids{
+    display: block;
+    margin: auto;
+}
+
+#bugdroid{
+    display: block;
+    margin: auto;
+}
+
+#video{
+    background-color: #042940;
+    padding: 20px;
+}
+
+#video iframe{
+    display: block;
+    margin: auto;
+}
+
+#esquerda{
+    float: left;
+}
+#irina{
+    display: block;
+    margin:auto
+}
+
+div{
+    padding-top: 5px;
+    padding-right: 10%;
+}
+
+
+article#mais{
+    background-color: #042940;
+    color: white;
+    font-family: arial;
+    padding: 10px;
+}
+
+p#aprender{
+    margin-top: 30px;
+    background-color: #1b7fbd;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+li{
+    text-decoration: underline;
+}
+
+main a{
+    text-decoration: none;
+    background-color: rgb(1, 138, 92);
+    padding: 1px;
+    color: #042940;
+    border-radius: 2px;
+}
+
+main a::after{
+    content: '🔗';
+}
+
+span#destaque{
+    color: rgb(1, 138, 92);
+}
+
+footer p{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(1, 138, 92);
+    background-color: black;
+}
