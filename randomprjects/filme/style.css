@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+:root{
+    --darkred: #8D121B;
+    --black: rgb(12, 12, 12);
+    --gray: #222222;
+    --text: 'Poppins', sans-serif;
+    --title:  'Belanosima', sans-serif;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--black);
+    color: white;
+}
+
+.cabeca{
+    background: var(--gray);
+}
+
+.cabeca nav{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5px 0px 10px 0;
+    font-family: var(--title);
+}
+
+header{
+    font-family: var(--text);
+    height: fit-content;
+    min-height: 60px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+header h1{
+    font-family: var(--title);
+}
+
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+header a:hover{
+    background-color: var(--darkred);
+    transition: 0.2s;
+}
+
