@@ -99,13 +99,18 @@ header a:hover{
     overflow-x:scroll;
     min-width: 200px;
     max-width: 900px;
-    height: 354px;
+    height: 400px;
     white-space:nowrap;
     margin: 100px auto ;
 }
 
 .filmes img{
     width: 240px;
+    padding: 0 10px;
+}
+
+.filmes img:hover{
+    transform: scale(1.2);
 }
 
 .snackbar h2{
