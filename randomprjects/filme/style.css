@@ -44,6 +44,10 @@ p{
     color: white;
 }
 
+.cabeca nav a:active{
+    color: var(--darkred);
+}
+
 header{
     font-family: var(--text);
     height: fit-content;
