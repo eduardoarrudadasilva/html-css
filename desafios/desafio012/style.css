@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "cordel";
+    src: url(fontes/cordel_encarnado/Cordel\ Encarnado\ II.otf) format(opentype);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "cordel";
+}
+
+p{
+    font-size: max(14px,2vw);
+}
+
+header{
+    background-color: black;
+    color: white;
+    min-height: 80px;
+    max-height: 200px;
+}
+
+header h1{
+    font-family: "cordel";
+    text-align: center;
+    font-size: 5vw;
+}
+
+header p{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+header p a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    background-color: lightgray;
+}
+
+main p{
+    margin-left: 20px;
+}
+
+main section{
+    height: fit-content;
+    padding: 40px;
+}
+
+#imagem p{
+    padding: 10px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.507);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.348);
+    color: white;
+}
+
+#noimg{
+    background-color: white;
+}
+
+.parte2{
+    background: lightgray url(imagens/background001.jpg) center center no-repeat fixed;
+}
+
+.parte4{
+    background: lightgray url(imagens/background002.jpg) center center no-repeat fixed;
+}
+
+footer{
+    display: flex;
+    background-color: lightgray;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    padding: 3px;
+    text-decoration: underline;
+    color: black;
+}
+/* FALTA FAZER SOMBRA*/
