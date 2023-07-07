@@ -123,10 +123,11 @@ header a:hover{
     height: 100%;
     text-align: center;
     white-space: normal;
-    display: none;
     text-decoration: none;
     color: white;
     background-color: #8d121ada;
+    transition: 400ms ease;
+    opacity: 0;
 }
 
 .filmes figure figcaption P{
@@ -140,7 +141,7 @@ header a:hover{
 
 
 .filmes figure:hover figcaption{
-    display: block;
+    opacity: 1;
 }
 
 .snackbar h2{
