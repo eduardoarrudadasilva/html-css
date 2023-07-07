@@ -58,6 +58,7 @@ header{
 header h1{
     font-family: var(--title);
     font-size: 40px;
+    margin-left: 10px;
 }
 
 h2{
@@ -104,13 +105,40 @@ header a:hover{
     margin: 100px auto ;
 }
 
-.filmes img{
-    width: 240px;
-    padding: 0 10px;
+.filmes figure{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 260px;
 }
 
-.filmes img:hover{
-    transform: scale(1.2);
+.filmes figure figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+    padding: 0 5px;
+    white-space: normal;
+    display: none;
+    text-decoration: none;
+    color: white;
+    background-color: #8d121ada;
+    border-radius: 10px;
+}
+
+.filmes img{
+    width: 240px;
+    padding: 10px;
+    position: relative;
+}
+
+.filmes figure:hover{
+    transform: scale(1.1);
+}
+.filmes figure:hover figcaption{
+    display: block;
 }
 
 .snackbar h2{
