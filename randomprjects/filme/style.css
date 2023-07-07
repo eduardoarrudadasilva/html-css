@@ -109,34 +109,36 @@ header a:hover{
     display: inline-block;
     overflow: hidden;
     position: relative;
-    width: 260px;
+    width: 240px;
+    border-radius: 10px;
 }
 
 .filmes figure figcaption{
+    box-sizing: content-box;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 80%;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    padding: 0 5px;
     white-space: normal;
     display: none;
     text-decoration: none;
     color: white;
     background-color: #8d121ada;
-    border-radius: 10px;
+}
+
+.filmes figure figcaption P{
+    padding: 150px 10px;
 }
 
 .filmes img{
     width: 240px;
-    padding: 10px;
     position: relative;
 }
 
-.filmes figure:hover{
-    transform: scale(1.1);
-}
+
 .filmes figure:hover figcaption{
     display: block;
 }
