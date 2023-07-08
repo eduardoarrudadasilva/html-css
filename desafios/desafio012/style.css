@@ -19,25 +19,31 @@ header{
     background-color: black;
     color: white;
     min-height: 80px;
-    max-height: 200px;
 }
 
 header h1{
+    padding-top: 30px;
     font-family: "cordel";
     text-align: center;
     font-size: 5vw;
+    font-variant: small-caps;
 }
 
 header p{
-    padding: 10px;
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
+
 }
 
 header p a{
     text-decoration: none;
     color: white;
+}
+
+header p a:hover{
+    text-decoration: underline;
 }
 
 main{
@@ -49,8 +55,9 @@ main p{
 }
 
 main section{
+    padding: 10vh 0;
     height: fit-content;
-    padding: 40px;
+    line-height: 2em
 }
 
 #imagem p{
@@ -67,10 +74,12 @@ main section{
 
 .parte2{
     background: lightgray url(imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 .parte4{
     background: lightgray url(imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 footer{
