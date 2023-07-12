@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="mas" checked> Masculino <br>
+            <input type="radio" name="sx" id="fem"> Feminino <br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label for="fut">
+                <input type="checkbox" name="fut" id="fut" checked> Futsal <br>
+            </label>
+            <label for="bas">
+                <input type="checkbox" name="bas" id="bas"> Basquete <br>
+            </label>
+            <label for="nat">
+                <input type="checkbox" name="nat" id="nat"> Natação <br>
+            </label>
+            <label for="ten">
+                <input type="checkbox" name="ten" id="ten">Tênis <br>
+            </label>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    Muito mais rápido que o live server
+</body>
+</html>

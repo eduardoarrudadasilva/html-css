@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.js" method="post">
+        <div>
+            <label for="cor">
+                <input type="color" name="cor" id="cor" value="#ffffff">
+            </label>
+        </div>
+        <div>
+            <label for="nivel">
+                Nível de stafisfação
+                <input type="range" name="nivel" id="nivel" value="0">
+            </label>
+        </div>
+        <div>
+            <label for="foto">
+                foto
+                <input type="file" name="foto" id="foto">
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

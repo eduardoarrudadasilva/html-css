@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.js">
+
+        <div>
+            <label for="n1">
+                Número 1
+                <div>
+                    <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+                </div>
+            </label>
+        </div>
+        <div>
+            <label for="n2">
+                Número 2
+                <div>
+                    <input type="number" name="n2" id="n2" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+                </div>
+            </label>
+        </div>
+        <div>
+            <label for="soma">Soma:</label>
+            <output id="soma" name="soma">0</output>
+        </div>
+        <div>
+            <label for="Número">
+                Número
+                <input type="range" name="num" id="num" min="0" max="100" value="0" oninput="val.innerHTML = Number(num.value)">
+                <output id="val">0</output>
+            </label>
+        </div>
+        <div>
+            <label for="ano">
+                Ano de nascimento:
+                <input type="number" name="ano" id="ano" min="1910" max="2023" oninput="calidade()">
+                <div>
+                    Idade:
+                    <output id="idade">0</output>
+                </div>
+            </label>
+        </div>
+        <div>   
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <script>
+        function calidade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = atual - Number(ano.value)
+        }
+    </script>
+</body>
+</html>
