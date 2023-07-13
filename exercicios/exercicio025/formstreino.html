@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(255, 69, 69);
+        }
+        header{
+            height: fit-content;
+        }
+        header h1{
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .form{
+            margin: auto;
+            width: 600px;
+            height: fit-content;
+            background-color: rgb(131, 34, 34);
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        input{
+            height: 20px;
+            width: 92%;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .meia{
+            width: 45%;
+        }
+        .preenchimento{
+            margin: 0 auto 30px auto;
+
+        }
+
+        .input-field{
+            margin: 10px 0;
+        }
+        select{
+            width: 92%;
+            height: 25px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        button{
+            border: none;
+            width: 60%;
+            height: 40px;
+            display: block;
+            margin: auto;
+            font-size: 28px;
+            font-weight: bolder;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 20px;
+            background-color: rgb(255, 69, 69);
+            color: white;
+            cursor: pointer;
+        }
+    </style> 
+
+</head>
+<body>
+    <header>
+        <h1>Formulário Colégio da Quebrada</h1>
+    </header>
+    <div class="form">
+        <form autocomplete="on">
+            <div class="preenchimento">
+                <label for="nome">
+                    1. Nome
+                    <div class="input-field">
+                        <input type="text" class="meia" required placeholder="Primeiro nome" autocomplete="name">
+                        <input type="text" class="meia" required placeholder="Sobrenome">
+                    </div>
+                </label>
+            </div>
+            <div class="preenchimento">
+                <label for="nasc">
+                    2. Data de Nascimento
+                    <div class="input-field">
+                        <input type="date" name="nasc" id="nasc" value="2023-07-12">
+                    </div>
+                </label>
+            </div>
+            <div class="preenchimento">
+                <label for="email">
+                    3. E-mail
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" placeholder="seuemail@gmail.com">
+                    </div>
+                </label>
+            </div>
+            <div class="preenchimento">
+                4. Gênero
+                <div class="input-field">
+                    <select name="genero" id="genero">
+                        <option value=" vazio"selected disabled></option>
+                        <option value="F">Fêmea</option>
+                        <option value="M">Macho</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <a href="#">
+                    <button type="submit">
+                        <p>Enviar</p>
+                    </button>
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
