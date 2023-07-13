@@ -1,4 +1,2 @@
 # html-css
- Curso de Html e Css
-
-<a href="https://eduardoarrudadasilva.github.io/html-css/randomprjects/filme/index.html">O que estou começando do zero só de brincadeira(Sou iniciante, n leva isso aqui sério não)</a>
+ Curso de Html e Css e outros vídeos que eu vi
