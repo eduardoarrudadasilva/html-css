@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*
+Pequenas telas : <480px
+Ipads, Tablets: 481-768px
+Laptops: 769px - 1024px
+Desktops: 1025 - 1200px
+Grandes telas: >1201px
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg); /*desnecessário*/
+        text-shadow: none;
+    }
+    main{
+        text-shadow: none;
+        border: 2px solid black;
+    }
+    main::after{
+        content: 'Olha a print';
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #tablet{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #tablet{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+}
