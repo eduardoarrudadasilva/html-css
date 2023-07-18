@@ -30,7 +30,6 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     width: 250px;
     height: 500px;
     background-color: var(--branco);
@@ -39,6 +38,7 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
+    transform: translate(-50%,-50%);
 }
 
 #login #imagem{
@@ -51,4 +51,72 @@ main{
 #login #formulario{
     padding: 10px;
     display: block;
+}
+
+#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario p{
+    font-size: 0.8em;
+    text-align: justify;   
+}
+
+.campo{
+    background-color: var(--lilas);
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.campo span{
+    color: white;
+    font-size: 2em;
+    height: 40px;
+    padding: 4px;
+}
+
+.campo input{
+    border: none;
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    height: 90%;
+    padding: 4px;
+    transform: translateY(-11px);
+}
+
+form input[type=submit]{
+    margin: auto;
+    display: block;
+    font-size: 1.2em;
+    width: 80%;
+    height: 40px;
+    background: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+form input[type=submit]:hover{
+    background-color: #265553;
+    border: 1px solid;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.esqueceu{
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+form .botao{
+    display: block;
+    text-align: left;
+    font-size: 0.7em;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    text-decoration: none;
+    color: rgb(76, 0, 255);
 }
