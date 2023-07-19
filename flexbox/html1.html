@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: antiquewhite;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           align-items: flex-start;
+           flex-wrap: wrap;
+           align-content: flex-start;
+           gap: 10px 30px;
+        }
+        div{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .bloco-1{
+            background-color: aqua;
+            text-align: center;
+            font-size: 0.5em;
+        }
+        .bloco-2{
+            background-color: purple;
+            text-align: center;
+            font-size: 0.7em;
+        }
+        .bloco-3{
+            background-color: pink;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+    </main>
+</body>
+</html>
