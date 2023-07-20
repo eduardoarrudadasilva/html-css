@@ -19,27 +19,42 @@
             align-items: center;
             flex-wrap: wrap;
             align-content: center;
-            gap: 10px 30px;
+            /*gap: 10px 30px;*/
+            row-gap: 10px;
+            column-gap: 30px;
         }
         div{
             width: 40px;
             height: 40px;
             border-radius: 10px;
-            padding: 10px;
+            padding: 16px;
         }
         .bloco-1{
             background-color: aqua;
             text-align: center;
-            font-size: 0.5em;
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto; */
+            flex: 0 0 auto;
         }
         .bloco-2{
             background-color: purple;
             text-align: center;
-            font-size: 0.7em;
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto; */
+            flex: 0 0 auto;
         }
         .bloco-3{
             background-color: pink;
             text-align: center;
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto; */
+            flex: 0 0 auto;
         }
     </style>
 </head>
@@ -48,15 +63,15 @@
         <div class="bloco-1">1</div>
         <div class="bloco-2">2</div>
         <div class="bloco-3">3</div>
-        <div class="bloco-1">1</div>
-        <div class="bloco-2">2</div>
-        <div class="bloco-3">3</div>
-        <div class="bloco-1">1</div>
-        <div class="bloco-2">2</div>
-        <div class="bloco-3">3</div>
-        <div class="bloco-1">1</div>
-        <div class="bloco-2">2</div>
-        <div class="bloco-3">3</div>
+        <!-- <div class="bloco-1">4</div>
+        <div class="bloco-2">5</div>
+        <div class="bloco-3">6</div>
+        <div class="bloco-1">7</div>
+        <div class="bloco-2">8</div>
+        <div class="bloco-3">9</div>
+        <div class="bloco-1">10</div>
+        <div class="bloco-2">11</div>
+        <div class="bloco-3">12</div> -->
     </main>
 </body>
 </html>
