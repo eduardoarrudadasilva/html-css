@@ -62,6 +62,7 @@ header{
     background-color: transparent;
     font-size: 18px;
     padding: 10px;
+    color: white;
 }
 
 .input-container input::placeholder{
