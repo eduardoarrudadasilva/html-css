@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+    border-bottom: 1px solid gray;
+}
+.social-icons{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons i{
+    font-size: 28px;
+}
+.title h1{
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 60px;
+    height: 100px;
+}
+
+.more-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.more-icons i{
+    font-size: 28px;
+}
+
+.informations{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
