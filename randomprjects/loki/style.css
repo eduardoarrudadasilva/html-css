@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  "Archivo", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://renans80.github.io/loki/assets/images/background.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+    max-width: 1400px;
+}
+
+.title{
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title h4{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.title h1{
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.movie-info{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.movie-image{
+    width: 280px;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.movie-more{
+    max-width: 720px;
+}
+
+.movie-description{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.duration-star-release{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.star{
+    color: rgb(255, 234, 0);
+}
+
+.star #not-colored{
+    color: rgb(134, 123, 0);
+}
+
+.buttons{
+    display: flex;
+    gap: 32px;
+}
+
+.buttons a{
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.buttons a:hover{
+    cursor: pointer;
+}
+
+.watch-now{
+    background: #0072D2;
+    color: white;
+}
+
+.trailer{
+    background: #131318;
+    border: 1px solid white;
+    color: white;
+}
