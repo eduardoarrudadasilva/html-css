@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: red;
+    color: white;
+}
+
+.wrapper{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-right: 2px solid #262626;
+    color:red;
+}
+
+.deslizador{
+    position: absolute;
+    top: 50%;
+    white-space: nowrap;
+    font-size: 16em;
+    overflow: hidden;
+    line-height: 220px;
+    font-family: "arial black";
+    animation: animate 8s linear infinite;
+
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(100%,-50%);
+    }
+    100%{
+        transform: translate(-100%,-50%);
+    }
+}
