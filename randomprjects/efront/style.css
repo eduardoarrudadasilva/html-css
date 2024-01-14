@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+@keyframes color {
+    0%{
+        color: white;
+    }
+
+    50%{
+        color:rgb(241, 115, 115);
+    }
+    100%{
+        color: white;
+    }
+}
+
+body{
+    background: #09090b;
+}
+
+
+.discount{
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.discount h4{
+    animation: color 3.5s linear infinite;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+header button{
+    padding: 15px 25px;
+    border: 1px solid;
+    border-color: #8E54E9;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0 rgba(71, 119, 230, 0.8);
+    transition: .5s ease;
+}
+
+header button:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.students-number{
+    background-color: #08040d;
+    width: fit-content;
+    padding: 10px 25px;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    border: 2px solid #130b1d;
+    border-radius: 50px;
+}
