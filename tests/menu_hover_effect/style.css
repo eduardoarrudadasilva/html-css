@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(18, 18, 18);
+}
+
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.link{
+    color: #fff;
+    font-size: 22px;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.link::before,.link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    /* Nesse ponto, o tamnao é "0", que vi ser mudado com o hover */
+    transition: all .6s ease;
+}
+
+.link::before{
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    /* Posicionando o before no topo esquerdo, começando o transform da equerda para direita*/
+}
+
+.link::after{
+    top: 100%;
+    left: 0;
+    transform-origin: right;
+    /* Posicionando o after no bottom esquerdo, começando o transform da direita para esquerda */
+}
+
+
+.link:hover::before, .link:hover::after{
+    transform: scaleX(1);
+}
