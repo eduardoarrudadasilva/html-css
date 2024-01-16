@@ -22,6 +22,7 @@
 
 body{
     background: #09090b;
+    color: white;
 }
 
 
@@ -62,6 +63,12 @@ header button:hover{
     cursor: pointer;
 }
 
+.main-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
 .students-number{
     background-color: #08040d;
     width: fit-content;
@@ -72,4 +79,103 @@ header button:hover{
     font-weight: 500;
     border: 2px solid #130b1d;
     border-radius: 50px;
+    align-self: center;
+}
+
+.colorized{
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.course-description{
+    color: rgb(166, 166, 166);
+}
+
+.box-left h1{
+    font-size: 54px;
+    line-height: 64px;
+}
+
+.box-left p{
+    font-size: 32px;
+}
+
+.box-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box-right{
+    width: 450px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 100px;
+    border-radius: 12px;
+}
+
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.offer-discount{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.offer-description{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.price{
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.special-price{
+    font-size: 72px;
+}
+
+.buy-product{
+    width: 100%;
+}
+
+.buy-ebook{
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+    width: 100%;
+    padding: 30px 0;
+    font-size: 28px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.buy-product{
+    font-size: 24px;
+    color: gray;
+}
+
+footer{
+    background-color: #08040d;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    font-size: 1.2em;
 }
