@@ -24,7 +24,6 @@ ul{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #fff;
     transform: scaleX(0);
     /* Nesse ponto, o tamnao é "0", que vi ser mudado com o hover */
     transition: all .6s ease;
@@ -34,6 +33,7 @@ ul{
     top: 0;
     left: 0;
     transform-origin: left;
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
     /* Posicionando o before no topo esquerdo, começando o transform da equerda para direita*/
 }
 
@@ -41,6 +41,7 @@ ul{
     top: 100%;
     left: 0;
     transform-origin: right;
+    background: linear-gradient(90deg, #8E54E9 0%, #4776E6 100%);
     /* Posicionando o after no bottom esquerdo, começando o transform da direita para esquerda */
 }
 
